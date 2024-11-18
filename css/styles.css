@@ -47,7 +47,7 @@ body {
     text-decoration: none; /* No underlining */
   }
 a:visited { /* visited link */
-  color: #7d00c0;
+  color: #012695 ;
 }
   a:hover {
     color: #00c15a;
@@ -60,17 +60,6 @@ a:visited { /* visited link */
     color: #1f90bd;
     text-decoration: underline;
   }
-
-
-
-
-
-
-
-
-
-
-
 
   .button {
     display: inline-block; 
@@ -99,3 +88,18 @@ a:visited { /* visited link */
     color: #ffffff;
   }
 
+/* styles.css */
+.btn {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff7f50;
+}
