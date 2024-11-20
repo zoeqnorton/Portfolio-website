@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-            <img src="img/Images/heroimage@1.jpg" alt="Zoe Norton">
+        <div class="container">
+            <img src="img/Images/heroimage@1.jpg" alt="Zoe Norton" class="logo"> Zoe Norton UI Designer
             <nav>
                 <ul>
                     <li><a href="mindfulmenus.html">Work</a></li>
@@ -17,11 +18,19 @@
                     <li><a href="index.html">Contact</a></li>
                 </ul>
             </nav>
+        </div>
     </header>
         <main>
+            <div id="hero">
+                <div class="container">
                     <h1>Hi, My name is Zoe!</h1>
                     <p>I am a UI designer based in New York, creating clean and easy-to-use interfaces that focuses on a seamless user experience. I am eager to create intuitive, user-friendly interfaces that enhance user experience and drive engagement. My goal is to combine my design skills with my strategic mindset to contribute to innovative projects that make a meaningful impact. </p>
+                </div>
+            </div>    
+                <div id="work">
+                    <div class="container">
                     <h2>My Work </h2>
+                    <div class="row">
                     <article></article>
                         <picture><img src="img/images/mindfulmenus-1.jpg" alt="Mindful Menus"></picture>
                         <h3>Mindful Menus</h3>
@@ -31,8 +40,23 @@
                             the needs of its users, and solve problems they face
                             with similar apps.</p>
                             <a href="mindfulmenus.html" class="btn">View Mindful Menus</a>
+                     </div> 
+                     <div class="row">
+                     <article></article>
+                     <picture> <img src="img/formfit@1.jpg" alt="FormFit"></picture>
+                     <h3>FormFit</h3>
+                     <p>FormFit is a workout based performance app, designed for users looking to curate a personal workout plan. Whether they are beginners or experts in the fitness world, FormFit is designed to guide users on their fitness journey with ease.</p>
+                     <a href="formfit.html" class="btn">View FormFit</a> 
+                    </div>
+                </div>
+
+
+
+
+            </div>
         </main> 
-        <footer id="contact">
+        <footer id="contact"> 
+            <div class="container">
                 <h2>Get In Touch With Me!</h2>
                 <p>Feel free to reach out to me with my contact information provided. I look forward to connecting with you! </p>
                 <ul>
@@ -42,6 +66,7 @@
                  <li><a href="https://www.behance.net/zoenorton1" class="button contact">Follow me on Behance</a> <aria-label>Follow Zoe On Behance</aria-label><img src="behance.svg" alt="Behance"></li>
                 </ul>
             <div>COPY RIGHT ZOE NORTON 2024</div>
+        </div>
         </footer>   
 </body>
 </html>
