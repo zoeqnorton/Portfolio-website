@@ -4,6 +4,14 @@
 #30748F
 #00A4E6
 */
+* {
+box-sizing: border-box;
+}
+header {
+    background: color #ffe4c4;
+    text-align: center;
+    padding: 10px 0;
+}
 body {
     background-color: #ECEDEE;
 }
@@ -103,3 +111,65 @@ a:visited { /* visited link */
 .btn:hover {
     background-color: #ff7f50;
 }
+/* Layout Styling */
+
+.container {
+    padding: 0 15px;
+}
+.row {
+    margin: 25px 0; /* 25 px top and bottom*/
+}
+#work .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #4a4a4a;
+}
+#hero h1 {
+    text-align: center; /* center text*/
+}
+.logo {
+max-width: 250px;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+    color: #012695;
+}
+nav > ul > li > a:hover {
+    color: #00c15a;
+}
+
+nav > ul > li > a:active {
+    color: #c1bb00;
+}
+nav {
+    display: inline-block;
+    width: 100%;
+}
+#hero {
+    background-color: #ffe4c4;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+header {
+    background-color: #ffe4c4;
+    position: relative;
+        width: [object Object]px; 
+        height: [object Object]px; 
+        background: #ffe4c4; 
+        border: solid #000000 1px; 
+        box-shadow: 1px 0 11px rgba(0, 0, 0, 0.4)  ; 
+        -webkit-box-shadow: 1px 0 11px rgba(0, 0, 0, 0.4)  ; 
+        -moz-box-shadow: 1px 0 11px rgba(0, 0, 0, 0.4)  ; 
+    }
