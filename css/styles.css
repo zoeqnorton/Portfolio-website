@@ -77,6 +77,8 @@ a:visited { /* visited link */
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #003449; /* width of the border, type, color */
+    transition-duration: 0.2s;
+    transition-property: opacity;
   }
   .button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
@@ -90,10 +92,13 @@ a:visited { /* visited link */
     color: #fa2525;
     text-transform: uppercase;
     border: 2px solid #fa2525;
+    transition-duration: 0.2s;
+    transition-property: opacity;
   }
   .button.contact:hover {
     background-color: #ff7f50;
     color: #ffffff;
+    opacity: 0.8;
   }
 
 /* styles.css */
@@ -106,10 +111,13 @@ a:visited { /* visited link */
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+    transition: 0.2s opacity;
 }
 
 .btn:hover {
     background-color: #ff7f50;
+    opacity: 0.8;
+
 }
 /* Layout Styling */
 
@@ -119,6 +127,12 @@ a:visited { /* visited link */
 .row {
     margin: 25px 0; /* 25 px top and bottom*/
 }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 #work .row {
     padding-bottom: 25px;
     border-bottom: 1px solid #4a4a4a;
@@ -127,7 +141,8 @@ a:visited { /* visited link */
     text-align: center; /* center text*/
 }
 .logo {
-max-width: 250px;
+max-width: 80px;
+max-height: 80px;
 }
 nav > ul {
     list-style-type: none;
@@ -159,8 +174,9 @@ nav {
 #hero {
     background-color: #ffe4c4;
     padding: 20px 0;
-    display: inline-block;
+    display: block;
     width: 100%;
+    text-align: center;
 }
 header {
     background-color: #ffe4c4;
@@ -173,3 +189,73 @@ header {
         -webkit-box-shadow: 1px 0 11px rgba(0, 0, 0, 0.4)  ; 
         -moz-box-shadow: 1px 0 11px rgba(0, 0, 0, 0.4)  ; 
     }
+    /*medium devices 640px and larger*/
+    @media only screen and (min-width: 640px) { 
+        header { text-align: unset;
+            padding: 20px 0 13px;
+        }
+        nav {
+            width: auto;
+            float: right;
+            margin-top: 4px;
+        }
+        .col-md-6 {
+            width:  50%;
+        }
+
+    }
+    /* large devices (1024 px or larger) */
+    @media only screen and (min-width: 1024px) {
+       body {
+        font-size: 18px;
+       }
+       .col-lg-8 {
+        width: 50%;
+       }
+
+    }
+    /* X-Large devices (1440px or larger)*/
+    @media only screen and (min-width: 1440px) {
+        body {
+            font-size: 18px;
+        }
+        .col-xl-4 {
+            width: 50%;
+        }
+
+    }
+    *.col- {
+        padding: 10px;
+    }
+#about-picture {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.bounce {
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+#capa_1 {
+    animation: scaleAnimation 2s infinite alternate;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
