@@ -247,15 +247,4 @@ header {
     display: inline-block;
     animation: bounce 2s infinite;
 }
-#capa_1 {
-    animation: scaleAnimation 2s infinite alternate;
-}
 
-@keyframes scaleAnimation {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.5);
-    }
-}
