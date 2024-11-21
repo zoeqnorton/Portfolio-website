@@ -248,3 +248,63 @@ header {
     animation: bounce 2s infinite;
 }
 
+/* Footer Styling*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ECEDEE;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; /* Adds spacing between text/button and icons */
+}
+
+/* Button Styling */
+.button.contact {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 15px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.button.contact:hover {
+    background-color: #0056b3;
+}
+/* Icon Styling */
+
+.email-icon svg,
+.instagram-icon svg,
+.behance-icon svg {
+    width: 40px; 
+    height: 40px; 
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Footer Copyright Text */
+footer > div {
+    margin-top: 20px;
+    font-size: 14px;
+}
