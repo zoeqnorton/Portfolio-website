@@ -132,6 +132,9 @@ a:visited { /* visited link */
     clear: both;
     display: table;
   }
+  [class*="col-"] {
+    float: left;
+  }
 
 #work .row {
     padding-bottom: 25px;
@@ -144,6 +147,7 @@ a:visited { /* visited link */
 max-width: 80px;
 max-height: 80px;
 }
+
 nav > ul {
     list-style-type: none;
     padding: 0;
@@ -222,11 +226,11 @@ header {
         .col-xl-4 {
             width: 50%;
         }
+    }
 
-    }
-    *.col- {
-        padding: 10px;
-    }
+   
+
+
 #about-picture {
     width: 100%;
     max-width: 100%;
@@ -308,3 +312,23 @@ footer > div {
     margin-top: 20px;
     font-size: 14px;
 }
+
+.desc-wrapper {
+    padding: 0px 20px;
+
+}
+
+/* nyc skyline animation */
+
+  .g {
+    animation: move 2s infinite alternate ease-in-out;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translate(0, 0); /* Start position */
+    }
+    100% {
+      transform: translate(20px, 20px); /* Move diagonally */
+    }
+  }
