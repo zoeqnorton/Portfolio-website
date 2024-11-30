@@ -6,18 +6,23 @@
     <title>Zoe Norton- UI designer</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/7b7e817270.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
         <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
             <img src="img/Images/heroimage@1.jpg" alt="Zoe Norton" class="logo"> Zoe Norton UI Designer
             <nav>
                 <ul>
                     <li><a href="work.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="index.html">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
+          </div>
         </div>
     </header>
     <section class="projects">
@@ -29,13 +34,13 @@
                 kitchen from beginner to expert. Created to meet
                 the needs of its users, and solve problems they face
                 with similar apps</p>
-            <a href="mindfulmenus.html" class="button contact">View Mindful Menus</a>
+            <a href="mindfulmenus.html" class="btn">View Mindful Menus</a>
         </article>
         <article class="project-card">
             <h3>Form Fit</h3>
             <img src="img/formfit/formfit-handimage.jpg" alt="formfit">
             <p>FormFit is a workout based performance app, designed for users looking to curate a personal workout plan. Whether they are beginners or experts in the fitness world, FormFit is designed to guide users on their fitness journey with ease.</p>
-            <a href="formfit.html" class="button contact">View Formfit</a>
+            <a href="formfit.html" class="btn">View Formfit</a>
         </article>
     </section>
 
@@ -57,6 +62,8 @@
     </ul>
 <div>COPY RIGHT ZOE NORTON 2024</div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script> src="js/jquery-3.7.1.min.js"</script>
 <script src="js/scripts.js"></script> 
 </body>
 </html>
