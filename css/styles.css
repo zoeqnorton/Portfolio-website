@@ -8,11 +8,11 @@
 box-sizing: border-box;
 }
 header {
-    background: color #ffe4c4;
+    background: color #b5dff9;
     padding: 10px 0, 4px;
 }
 body {
-    background-color: #ECEDEE;
+    background-color: #ffffff;
 }
 body {
     font-family: Arial, sans-serif;
@@ -48,6 +48,11 @@ body {
  img {
     width: 100%;
   }
+  .work-img {
+    height: 50%;
+    width: 50%;
+    align-self: center;
+  }
 
   a {
     color: #000000;
@@ -57,7 +62,7 @@ a:visited { /* visited link */
   color: #012695 ;
 }
   a:hover {
-    color: #00c15a;
+    color: #c10050;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
   a:active { /* selected link */
@@ -88,9 +93,9 @@ a:visited { /* visited link */
   }
   .button.contact {
     background-color: transparent;
-    color: #fa2525;
+    color: #110071;
     text-transform: uppercase;
-    border: 2px solid #fa2525;
+    border: 2px solid #110071;
     transition-duration: 0.2s;
     transition-property: opacity;
   }
@@ -102,7 +107,7 @@ a:visited { /* visited link */
 
 /* styles.css */
 .btn {
-    background-color: #ff7f50;
+    background-color: #78b2f9;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -114,7 +119,7 @@ a:visited { /* visited link */
 }
 
 .btn:hover {
-    background-color: #ff7f50;
+    background-color: #78b2f9;
     opacity: 0.8;
 
 }
@@ -146,6 +151,16 @@ a:visited { /* visited link */
 max-width: 80px;
 max-height: 80px;
 }
+.designer-title {
+    display: inline-block; /* Ensures the box wraps only the text */
+    background-color: #f0f0f0; /* Set the background color of the box */
+    padding: 5px 10px; /* Add space around the text inside the box */
+    border: 1px solid #ccc; /* Optional: Add a border around the box */
+    border-radius: 5px; /* Optional: Rounds the corners of the box */
+    color: #333; /* Text color */
+    font-weight: bold; /* Optional: Make the text bold */
+    margin-left: 10px; /* Adds spacing between the text and the logo */
+}
 
 /*nav styling*/
 nav > ul {
@@ -164,7 +179,7 @@ nav > ul > li > a:visited {
     color: #012695;
 }
 nav > ul > li > a:hover {
-    color: #00c15a;
+    color: #c10050;
 }
 
 nav > ul > li > a:active {
@@ -202,18 +217,18 @@ nav > ul > li > a:active {
   }
 
 #hero {
-    background-color: #ffe4c4;
+    background-color: #b5dff9;
     padding: 20px 0;
     display: block;
     width: 100%;
     text-align: center;
 }
 header {
-    background-color: #ffe4c4;
+    background-color: #b5dff9;
     position: relative;
         width: [object Object]px; 
         height: [object Object]px; 
-        background: #ffe4c4; 
+        background: #b5dff9; 
         border: solid #000000 1px; 
         box-shadow: 1px 0 11px rgba(0, 0, 0, 0.4)  ; 
         -webkit-box-shadow: 1px 0 11px rgba(0, 0, 0, 0.4)  ; 
@@ -296,9 +311,10 @@ header {
 /* Footer Styling*/
 
 footer {
+    clear: both;
     text-align: center;
     padding: 20px;
-    background-color: #ECEDEE;
+    background-color: #b5dff9;
 }
 
 footer h2 {
@@ -372,4 +388,9 @@ footer > div {
     100% {
       transform: translate(20px, 20px); /* Move diagonally */
     }
+  }
+  .personal-img {
+    width: 50%;
+    height: 50%;
+    align-content: center;
   }
