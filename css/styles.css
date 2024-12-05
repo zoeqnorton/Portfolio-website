@@ -136,9 +136,12 @@ a:focus {
   border: none;
   border-radius: 5px;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   cursor: pointer;
   transition: 0.2s opacity;
+  float: none;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .btn:hover {
@@ -164,6 +167,7 @@ a:focus {
 
 [class*="col-"] {
   float: left;
+  padding: 10px;
 }
 
 #work .row {
@@ -451,4 +455,12 @@ footer > div {
   width: 50%;
   height: 50%;
   align-content: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.header-1 {
+  text-align: center;
 }
