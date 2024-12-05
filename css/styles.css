@@ -389,7 +389,7 @@ footer ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; /* Adds spacing between text/button and icons */
+  gap: 5px; /* Adds spacing between text/button and icons */
 }
 
 /* Button Styling */
